@@ -33,14 +33,12 @@ function Projects() {
 		<a
 		    href="https://github.com/itslwg/prediction_models_vs_clinicians"
 		    target='_blank'
-		    rel="noopener"
 		>
 		  <AiOutlineGithub/>
 		</a>
 		<a
 		    href="https://pubmed.ncbi.nlm.nih.gov/32075827/"
 		    target='_blank'
-		    rel="noopener"
 		>
 		  <SiPubmed/>
 		</a>
