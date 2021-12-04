@@ -9,7 +9,7 @@ function App() {
 	      <span class="emoji">&#129300;</span>
 	    </p>
             <p>
-	      Thoughts
+	      Thoughts and Notes
             </p>
 	  </header>
 	</div>
