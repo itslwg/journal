@@ -1,54 +1,56 @@
-import './App.css';
+import React from 'react';
+
+import '../App.css';
+import './Projects.css';
+
+import { AiOutlineGithub } from 'react-icons/ai';
+import { SiPubmed } from 'react-icons/si';
 
 import {
-    Navbar,
-    Nav,
-    NavDropdown,
-    Container
+    Card,
 } from 'react-bootstrap';
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-function App() {
+function Projects() {
     return (
-	<div className="App-navbar">
-	  <Routes>
-	    <Navbar className="navbar" expand="lg">
-	      <Container>
-		<Navbar.Brand href="/home">Thoughts</Navbar.Brand>
-		<Navbar.Toggle aria-controls="basic-navbar-nav" />
-		<Navbar.Collapse id="basic-navbar-nav">
-		  <Nav className="me-auto">
-		    <Route path="/" element={<Home />} />
-		    <Route path="/" element={<Home />} />
-		    <Route path="/" element={<Home />} />
-		  </Nav>
-		</Navbar.Collapse>
-	      </Container>
-	    </Navbar>
-	  </Routes>
+	<div className="Projects-base">
 	  <header className="App-header">
 	    <p>
-	      <span className="emoji">&#129300;</span>
+	      <span>Projects</span>
 	    </p>
-            <p>
-	      Thoughts and Notes
-            </p>
 	  </header>
+	  <Card
+	      className="shadow-lg p-3 mb-5 bg-white rounded"
+	      style={{ width: '18rem' }}
+	  >
+	    <Card.Body>
+	      <Card.Title>
+		Mortality Prediction
+	      </Card.Title>
+	      <Card.Text>
+		Title: Comparison of emergency department trauma triage performance of clinicians and clinical prediction models: a cohort study in India
+	      </Card.Text>
+	      <Card.Footer>
+		<a
+		    href="https://github.com/itslwg/prediction_models_vs_clinicians"
+		    target='_blank'
+		    rel="noopener"
+		>
+		  <AiOutlineGithub/>
+		</a>
+		<a
+		    href="https://pubmed.ncbi.nlm.nih.gov/32075827/"
+		    target='_blank'
+		    rel="noopener"
+		>
+		  <SiPubmed/>
+		</a>
+	      </Card.Footer>
+	    </Card.Body>
+	  </Card>
 	</div>
     );
 }
 
-function Home() {
-  return (
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-  );
-}
-
-export default App;
+export default Projects;

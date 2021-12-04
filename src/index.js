@@ -12,16 +12,26 @@ import {
 import reportWebVitals from './reportWebVitals'
 
 import App from './App';
-import Home from './components/Home';
+import Projects from './components/Projects';
+import Concepts from './components/Concepts';
+import NavigationBar from './components/NavigationBar';
 
 ReactDOM.render(
     <React.StrictMode>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-	<Routes>
-	  <Route path="/" element={<App />} />
-	  <Route path="home" element={<Home />} />
-	</Routes>
-      </BrowserRouter>
+      <div className="main">
+	<BrowserRouter basename={process.env.PUBLIC_URL}>
+	  <NavigationBar/>
+	  <Routes>
+	    <Route path="/" element={<App />} />
+	    <Route path="concepts" element={<Concepts />} />
+	    <Route path="projects" element={<Projects />} />
+	    <Route path="projects/gh" component={() => { 
+		window.location.href = "https://github.com/itslwg/prediction_models_vs_clinicians"; 
+		return null;
+	    }}/>
+	  </Routes>
+	</BrowserRouter>
+      </div>
     </React.StrictMode>,
     document.getElementById('root')
 );

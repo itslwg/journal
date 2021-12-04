@@ -1,0 +1,16 @@
+.Projects-base {
+    padding-base: 10cm;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem
+}
+
+.Projects-card {
+    background-color: #FDF6E3;
+    box-shadow: 10px 5px 5px grey;
+    width: '18rem';
+}
+
+
+
+
