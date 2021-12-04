@@ -10,8 +10,6 @@ import {
     Card,
 } from 'react-bootstrap';
 
-import { Link } from 'react-router-dom';
-
 function Projects() {
     return (
 	<div className="Projects-base">
