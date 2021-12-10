@@ -13,11 +13,12 @@ function NavigationBar() {
     return (
 	<Navbar className="App-navbar" expand="lg">
 	  <Container>
-	    <h4 className="NavigationBar-Brand">Thoughts</h4>
+	    <Navbar.Brand href="/journal" className="NavigationBar-Brand">
+	      <span>&#129300;</span>
+	    </Navbar.Brand>
 	    <Navbar.Toggle aria-controls="basic-navbar-nav" />
 	    <Navbar.Collapse id="basic-navbar-nav">
 	      <Nav className="me-auto">
-		<NavLink className="App-navlink" to="/Concepts">Concepts</NavLink>
 		<NavLink className="App-navlink" to="/projects">Projects</NavLink>
 	      </Nav>
 	    </Navbar.Collapse>

@@ -3,14 +3,21 @@ import React from 'react';
 import '../App.css';
 import './Projects.css';
 
-import { AiOutlineGithub } from 'react-icons/ai';
-import { SiPubmed } from 'react-icons/si';
+import ProjectCard from './Project.js';
 
 import {
-    Card,
+    Row,
+    Col,
+    Container
 } from 'react-bootstrap';
 
-function Projects() {
+function Projects () {
+
+    const keyTakeawaysTitco = [
+	"Similar discrimination and reclassification",
+	""
+    ]
+    
     return (
 	<div className="Projects-base">
 	  <header className="App-header">
@@ -18,31 +25,53 @@ function Projects() {
 	      <span>Projects</span>
 	    </p>
 	  </header>
-	  <Card
-	      className="shadow-lg p-3 mb-5 bg-white rounded"
-	      style={{ width: '18rem' }}
-	  >
-	    <Card.Body>
-	      <Card.Title>
-		Mortality Prediction
-	      </Card.Title>
-	      <Card.Text>
-		Title: Comparison of emergency department trauma triage performance of clinicians and clinical prediction models: a cohort study in India
-	      </Card.Text>
-	      <Card.Footer>
-		<a
-		    href="https://github.com/itslwg/prediction_models_vs_clinicians"
-		>
-		  <AiOutlineGithub/>
-		</a>
-		<a
-		    href="https://pubmed.ncbi.nlm.nih.gov/32075827/"
-		>
-		  <SiPubmed/>
-		</a>
-	      </Card.Footer>
-	    </Card.Body>
-	  </Card>
+	  <Container>
+	    <Row>
+	      <Col sm>
+		<ProjectCard
+		    title="Predicting Mortality"
+		    summary =
+		    "
+		    Comparison of triage performance of Revised Trauma Score, GAP score, Gerdin et al. 
+		    model, KTS score. with clinicians.	  
+		"
+		    pic="titco.png"
+		    githubLink="https://github.com/itslwg/prediction_models_vs_clinicians"
+		    pubmedLink="https://pubmed.ncbi.nlm.nih.gov/32075827/" 
+		    websiteLink="https://www.titco.org/"
+		    keyTakeaways={keyTakeawaysTitco}
+		/>
+	      </Col>
+	      <Col sm>
+		<ProjectCard
+		    title="Predicting Default"
+		    summary =
+		    "
+		    Unsupervised learning for dimensionality reduction of financial statement 
+		    information for predicting default.
+		"
+		    pic="Froda.jpeg"
+		    githubLink="https://github.com/itslwg/fsdr"
+		    websiteLink="https://www.titco.org/"
+		    keyTakeaways={keyTakeawaysTitco}
+		/>
+	      </Col>
+	      <Col sm>
+		<ProjectCard
+		    title="Forecasting Avalanches"
+		    summary =
+		    "
+		    Replicating risk assessments made by forecasting experts using 
+		    deep learning methods for ordinal regression. 
+		"
+		    pic="sdsc.png"
+		githubLink="https://github.com/itslwg/oraf"
+		websiteLink="https://datascience.ch/project/deapsnow-improving-snow-avalanche-forecasting-by-data-driven-automated-predictions/"
+		    keyTakeaways={keyTakeawaysTitco}
+		/>
+	      </Col>
+	    </Row>
+	  </Container>
 	</div>
     );
 }
