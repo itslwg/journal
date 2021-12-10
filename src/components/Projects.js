@@ -12,11 +12,6 @@ import {
 } from 'react-bootstrap';
 
 function Projects () {
-
-    const keyTakeawaysTitco = [
-	"Similar discrimination and reclassification",
-	""
-    ]
     
     return (
 	<div className="Projects-base">
@@ -39,7 +34,6 @@ function Projects () {
 		    githubLink="https://github.com/itslwg/prediction_models_vs_clinicians"
 		    pubmedLink="https://pubmed.ncbi.nlm.nih.gov/32075827/" 
 		    websiteLink="https://www.titco.org/"
-		    keyTakeaways={keyTakeawaysTitco}
 		/>
 	      </Col>
 	      <Col sm>
@@ -53,7 +47,6 @@ function Projects () {
 		    pic="Froda.jpeg"
 		    githubLink="https://github.com/itslwg/fsdr"
 		    websiteLink="https://www.titco.org/"
-		    keyTakeaways={keyTakeawaysTitco}
 		/>
 	      </Col>
 	      <Col sm>
@@ -67,7 +60,6 @@ function Projects () {
 		    pic="sdsc.png"
 		githubLink="https://github.com/itslwg/oraf"
 		websiteLink="https://datascience.ch/project/deapsnow-improving-snow-avalanche-forecasting-by-data-driven-automated-predictions/"
-		    keyTakeaways={keyTakeawaysTitco}
 		/>
 	      </Col>
 	    </Row>

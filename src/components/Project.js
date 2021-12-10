@@ -1,9 +1,7 @@
 import React from 'react';
 
 import {
-    Card,
-    ListGroup,
-    ListGroupItem
+    Card
 } from 'react-bootstrap';
 
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -11,10 +9,6 @@ import { SiPubmed } from 'react-icons/si';
 import { BsGlobe } from 'react-icons/bs';
 
 function ProjectCard(props) {
-    const takeawayItems = props.keyTakeaways.map((kt) => {
-	return <ListGroupItem>{kt}</ListGroupItem>
-    })
-    
     return (
 	<Card
 	    className="shadow-lg p-3 mb-5 bg-white rounded"
@@ -26,12 +20,6 @@ function ProjectCard(props) {
 	    <Card.Text>
 	      {props.summary}
 	    </Card.Text>
-	    {/* <Card.Title>Key Takeaways</Card.Title> */}
-	    {/* <ListGroup className="list-group-flush">
-		{takeawayItems}
-		</ListGroup> */}
-	    <Card.Body>
-	    </Card.Body>
 	    <Card.Link href={props.githubLink} >
 	      {props.githubLink ? <AiOutlineGithub size={50} /> : ""}
 	    </Card.Link>
