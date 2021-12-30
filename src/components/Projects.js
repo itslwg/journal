@@ -44,7 +44,7 @@ function Projects () {
 		    Unsupervised learning for dimensionality reduction of financial statement 
 		    information for predicting default.
 		"
-		    pic="Froda.jpeg"
+		    pic="froda.png"
 		    githubLink="https://github.com/itslwg/fsdr"
 		    websiteLink="https://www.titco.org/"
 		/>
