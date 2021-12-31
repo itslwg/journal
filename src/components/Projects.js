@@ -27,7 +27,7 @@ function Projects () {
 		    title="Predicting Mortality"
 		    summary =
 		    "
-		    Comparison of triage performance of Revised Trauma Score, GAP score, Gerdin et al. 
+		    Comparison of triage performance of Revised Trauma Score, GAP score, Gerdin et al.
 		    model, KTS score. with clinicians.	  
 		"
 		    pic="titco.png"
@@ -46,7 +46,7 @@ function Projects () {
 		"
 		    pic="froda.png"
 		    githubLink="https://github.com/itslwg/fsdr"
-		    websiteLink="https://www.titco.org/"
+		    websiteLink=""
 		/>
 	      </Col>
 	      <Col sm>
